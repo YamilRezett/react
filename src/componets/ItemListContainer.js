@@ -1,11 +1,22 @@
 import { render } from "@testing-library/react";
+import ItemCount from "./ItemCount";
+import { Button } from "bootstrap"
+import {useState} from "react"
+
 
 const ItemListContainer = (props) => {
     console.log(props)
     return (
-        <p>
+      <>
+      <p>
            ¡Protegete tu patrimonio {props.name}! 
-        </p>
+      </p>
+
+      <div>
+         <ItemCount/>
+      </div>
+      </>
+        
     );
     
   }
