@@ -1,36 +1,48 @@
 import { Button } from "bootstrap"
-import {useState} from "react"
+import {useState ,useEffect } from "react"
+//useEstate: hook de estad
+//useEffect : hook de esectos ("simula los metodos del ciclo de vida de un componente")
 
-const ItemCount =() => {
+const ItemCount =({onAdd, stock, initial}) => {
+    const[titulo, setTitulo] = useState("cargando")
     const [contador, setContador] = useState(0)
+    const [confirmed, setConfirmed] = useState(false)
 
-    const aumentarContador = () => {
-        console.log("aumentarContador")
-        
-        if(contador<5){
-            setContador(contador + 1)
-        }
+    useEffect(() => {
+        setTitulo("cargando...")
+
+        setTimeout(() => {
+            setTitulo("Producto")
+        }, 3000)
+    }, [confirmed])
+
+    const sumar = () => {
+        setContador(contador + 1)
     }
 
-    const disminuirContador = () => {
+    const restar = () => {
         setContador(contador - 1)
     }
 
-    const resetearContador = () => {
-        setContador(0)
+    const confirmar = () => {
+        setConfirmed(!confirmed)
     }
-
+    
+    
     return (
         <>
        <div>
-            <button onClick={aumentarContador}>click</button>
-            <button onClick={resetearContador}>click</button>
-            <button onClick={disminuirContador}>click</button>
+        <h1>{titulo}</h1>
+        <p id="parrafo">El contador va : {contador}</p>
+            <button onClick={sumar}>Sumar</button>
+            <button onClick={confirmar}>Confirmar</button>
+            <button onClick={restar}>Restar</button>
        </div>
        
         </>
         
-     )
+        )
+
 
 }
 

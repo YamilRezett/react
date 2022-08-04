@@ -13,8 +13,11 @@ const ItemListContainer = (props) => {
       </p>
 
       <div>
+
          <ItemCount/>
+         
       </div>
+      
       </>
         
     );
