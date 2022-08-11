@@ -1,11 +1,12 @@
+import producto from "../productosIniciales";
 
-const Item = ({ product }) => {
+const Item = ({ producto }) => {
     return(
-        <>
-        <div>{product.product}</div>
-        <img src={product.image} />
-        </>
+       <article>
+        <h2>{producto.nombre}</h2>
+        <p>Precio : ${producto.precio}</p>
         
+       </article>
     )
 }
 
