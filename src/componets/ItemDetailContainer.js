@@ -11,13 +11,13 @@ const ItemDetailContainer = () => {
  
     useEffect(() =>{
         setLoading(true)
-        customFetch(productosIniciales)
+        customFetch(productosIniciales[0])
            .then(res => {
             setLoading(false) 
-            setListProduct(res.find(item => item.id === 1))
+            setListProduct(res.find(item => item.id==id))
            })
 
-    }, [])
+    }, [id])
     return(
         <>
            <ItemDetail/>

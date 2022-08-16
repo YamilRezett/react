@@ -1,4 +1,3 @@
- 
 import {useState ,useEffect } from "react"
 //useEstate: hook de estad
 //useEffect : hook de esectos ("simula los metodos del ciclo de vida de un componente")

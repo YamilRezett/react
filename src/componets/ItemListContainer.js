@@ -4,6 +4,11 @@ import ItemList from "./ItemList";
 
 // import { logDOM } from "@testing-library/react";
 
+// const pedido = fetch('https://fakestoreapi.com/products')
+           
+// .then(res=>res.json())
+           
+// .then(json=>console.log(json))
 
 const ItemListContainer = () => {
     
