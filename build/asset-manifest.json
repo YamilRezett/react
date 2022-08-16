@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/YamilRezett/react/static/css/main.84487ea8.css",
+    "main.js": "/YamilRezett/react/static/js/main.c00fedda.js",
+    "index.html": "/YamilRezett/react/index.html",
+    "main.84487ea8.css.map": "/YamilRezett/react/static/css/main.84487ea8.css.map",
+    "main.c00fedda.js.map": "/YamilRezett/react/static/js/main.c00fedda.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.84487ea8.css",
+    "static/js/main.c00fedda.js"
+  ]
+}
