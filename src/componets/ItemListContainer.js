@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
-// import CustomLoader from "./CustomLoader"
+import CustomLoader from "./CustomLoader"
 import ItemList from "./ItemList"
 // import Page from "./Page"
 
@@ -45,8 +45,7 @@ const ItemListContainer = () => {
 
     if (loading) {
         return (
-            <p>Cargando...</p>
-            // <CustomLoader />
+             <CustomLoader />
         )
     } else {
         return (

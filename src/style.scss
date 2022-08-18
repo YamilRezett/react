@@ -14,14 +14,14 @@ html , body , #root {
 }
 
 body {
-    background-color: rgb(6, 14, 160);  
-    color: rgb(255, 255, 255);  
+    background-color: rgba(255, 255, 255, 0.868);  
+    color: rgb(5, 4, 4);  
     font-family: Arial;  
     text-align: center;  
 }
 
 .header {
-    background-color: rgb(7, 2, 2);
+    background-color: rgb(234, 218, 0);
     display: flex;
     justify-content: space-between;
     padding: 0.5rem 1rem;
@@ -34,7 +34,7 @@ body {
     }
 
     a {
-        color: white;
+        color: rgb(4, 4, 4);
         text-decoration: none;
     }
 
@@ -75,7 +75,7 @@ main {
     }
 
     &__button {
-        background-color: rgb(38, 48, 244);
+        background-color: rgb(234, 218, 0);
         padding: 0.5rem 1rem;
         text-decoration: none;
         color: black;
@@ -91,7 +91,8 @@ footer {
     align-items: center;
     padding: 0.5rem 1rem;
     margin-top: 1rem;
-    background-color: rgb(251, 251, 251);
+    background-color: #fff;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 
 
