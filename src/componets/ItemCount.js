@@ -1,67 +1,67 @@
-import {useState ,useEffect } from "react"
-//useEstate: hook de estad
-//useEffect : hook de esectos ("simula los metodos del ciclo de vida de un componente")
+// import {useState ,useEffect } from "react"
+// //useEstate: hook de estad
+// //useEffect : hook de esectos ("simula los metodos del ciclo de vida de un componente")
 
-// const ItemCount = ({initial, stock, onAdd}) => {
-    // const[titulo, setTitulo] = useState("cargando")
-    // const [contador, setContador] = useState(0)
-    // const [confirmed, setConfirmed] = useState(false)
+//     const ItemCount = ({initial, stock, onAdd}) => {
 
-    // useEffect(() => {
-    //     setTitulo("cargando...")
+//         const [count, setCount] = useState(initial)
+//         const [titulo, setTitulo] = useState("Hola")
 
-    //     setTimeout(() => {
-    //         setTitulo("Producto")
-    //     }, 3000)
-    // }, [confirmed])
+//         const increase = () => count < stock && setCount(count + 1)
+//         const decrease = () => count > initial && setCount (count - 1)
 
-    // const sumar = () => {
-    //     setContador(contador + 1)
-    // }
-
-    // const restar = () => {
-    //     setContador(contador - 1)
-    // }
-
-    // const confirmar = () => {
-    //     setConfirmed(!confirmed)
-    // }
+//         useEffect(() => {
+//             console.log("soy el efecto")
+//         }, [titulo])
+    
+    
 //     return (
-//         <>
-//        <div>
-//             <h1>{titulo}</h1>
-//             <p id="parrafo">El contador va : {contador}</p>
-//             <button onClick={sumar}>Sumar</button>
-//             <button onClick={confirmar}>Confirmar</button>
-//             <button onClick={restar}>Restar</button>
-//        </div>
-//         </>
-//         )
+//         <div> 
+//         <button onClick={decrease}>-</button>
+//         <button onClick={increase}>+</button>
+//         <p id="parrafo">El contador va : {count}</p>
+//         <button onClick={() => setTitulo("Chau")}>Agregar al carrito</button>                 
+//        </div>       
+//           )
 // }
 
 // export default ItemCount;
 
-    const ItemCount = ({initial, stock, onAdd}) => {
+// // const ItemCount = ({initial, stock, onAdd}) => {
+//     // const[titulo, setTitulo] = useState("cargando")
+//     // const [contador, setContador] = useState(0)
+//     // const [confirmed, setConfirmed] = useState(false)
 
-        const [count, setCount] = useState(initial)
-        const [titulo, setTitulo] = useState("Hola")
+//     // useEffect(() => {
+//     //     setTitulo("cargando...")
 
-        const increase = () => count < stock && setCount(count + 1)
-        const decrease = () => count > initial && setCount (count - 1)
+//     //     setTimeout(() => {
+//     //         setTitulo("Producto")
+//     //     }, 3000)
+//     // }, [confirmed])
 
-        useEffect(() => {
-            console.log("soy el efecto")
-        }, [titulo])
-    
-    
-    return (
-        <div> 
-        <button onClick={decrease}>-</button>
-        <button onClick={increase}>+</button>
-        <p id="parrafo">El contador va : {count}</p>
-        <button onClick={() => setTitulo("Chau")}>Agregar al carrito</button>                 
-       </div>       
-          )
-}
+//     // const sumar = () => {
+//     //     setContador(contador + 1)
+//     // }
 
-export default ItemCount;
+//     // const restar = () => {
+//     //     setContador(contador - 1)
+//     // }
+
+//     // const confirmar = () => {
+//     //     setConfirmed(!confirmed)
+//     // }
+// //     return (
+// //         <>
+// //        <div>
+// //             <h1>{titulo}</h1>
+// //             <p id="parrafo">El contador va : {contador}</p>
+// //             <button onClick={sumar}>Sumar</button>
+// //             <button onClick={confirmar}>Confirmar</button>
+// //             <button onClick={restar}>Restar</button>
+// //        </div>
+// //         </>
+// //         )
+// // }
+
+// // export default ItemCount;

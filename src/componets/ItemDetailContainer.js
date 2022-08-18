@@ -1,29 +1,36 @@
-import { useState, useEffect } from "react";
-import ItemDetail from "./ItemDetail";
-import { productosIniciales } from "../productosIniciales";
-import { customFetch } from "../customFetch";
-
+import { useEffect, useState } from "react";
+// import ItemDetail from "./ItemDetail"
+import { useParams } from "react-router-dom";
 
 const ItemDetailContainer = () => {
-    
-    const [listProduc, setListProduct] = useState({})
-    const [loading, setLoading] = useState(true)
- 
-    useEffect(() =>{
-        setLoading(true)
-        customFetch(productosIniciales[0])
-           .then(res => {
-            setLoading(false) 
-            setListProduct(res.find(item => item.id==id))
-           })
+
+    const [item, setItem] = useState({});
+    const { id } = useParams();
+
+    useEffect(() => {
+
+        //https://ghibliapi.herokuapp.com/films/2baf70d1-42bb-4437-b551-e5fed5a87abe
+        const pedido = fetch("https://fakestoreapi.com/products/" + id)
+
+        pedido
+            .then((respuesta) => {
+                return respuesta.json()
+            })
+            .then((respuesta) => {
+                setItem(respuesta)
+            })
+            .catch(error => console.log(error))
 
     }, [id])
-    return(
+
+
+    return (
         <>
-           <ItemDetail/>
+            <div className='container'>
+                {/* <ItemDetail item={item} /> */}
+            </div>
         </>
-        
-    )
+    );
 }
 
- export default ItemDetailContainer;
+export default ItemDetailContainer;
