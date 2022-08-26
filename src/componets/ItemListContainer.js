@@ -1,24 +1,48 @@
-import { render } from "@testing-library/react";
-import ItemCount from "./ItemCount";
-import { Button } from "bootstrap"
-import {useState} from "react"
+import { useEffect, useState } from "react"
+import { useParams } from "react-router-dom"
+import CustomLoader from "./CustomLoader"
+import ItemList from "./ItemList"
+import Page from "./Page"
+import ProductosIniciales from "../assets/ProductosIniciales"
+
+const ItemListContainer = () => {
+
+    const [productos, setProductos] = useState([])
+    const [loading, setLoading] = useState(true)
+    // const { id } = useParams()
+
+    useEffect(() => {
+
+        const pedido = new Promise((res, rej) => {
+            setTimeout(() => {
+                res(ProductosIniciales)
+            }, 2000)
+        })
+
+        pedido.then((resultado) => {
+            setProductos(resultado)
+            setLoading(false)
+        })
+
+        pedido.catch((error) => {
+            console.log("Termino el pedido mal")
+        })
+
+    }, [])
 
 
-const ItemListContainer = (props) => {
-    console.log(props)
-    return (
-      <>
-      <p>
-           ¡Protegete tu patrimonio {props.name}! 
-      </p>
+    if (loading) {
+        return (
+             <CustomLoader />
+        )
+    } else {
+        return (
+             <Page titulo="Catalogo" subtitulo="Zapatillas Urbanas">
+                 <ItemList productos={productos} />
+             </Page>
+        )
+    }
 
-      <div>
-         <ItemCount/>
-      </div>
-      </>
-        
-    );
-    
-  }
-    
+}
 export default ItemListContainer
+

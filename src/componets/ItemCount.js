@@ -1,37 +1,67 @@
-import { Button } from "bootstrap"
-import {useState} from "react"
+// import {useState ,useEffect } from "react"
+// //useEstate: hook de estad
+// //useEffect : hook de esectos ("simula los metodos del ciclo de vida de un componente")
 
-const ItemCount =() => {
-    const [contador, setContador] = useState(0)
+//     const ItemCount = ({initial, stock, onAdd}) => {
 
-    const aumentarContador = () => {
-        console.log("aumentarContador")
-        
-        if(contador<5){
-            setContador(contador + 1)
-        }
-    }
+//         const [count, setCount] = useState(initial)
+//         const [titulo, setTitulo] = useState("Hola")
 
-    const disminuirContador = () => {
-        setContador(contador - 1)
-    }
+//         const increase = () => count < stock && setCount(count + 1)
+//         const decrease = () => count > initial && setCount (count - 1)
 
-    const resetearContador = () => {
-        setContador(0)
-    }
+//         useEffect(() => {
+//             console.log("soy el efecto")
+//         }, [titulo])
+    
+    
+//     return (
+//         <div> 
+//         <button onClick={decrease}>-</button>
+//         <button onClick={increase}>+</button>
+//         <p id="parrafo">El contador va : {count}</p>
+//         <button onClick={() => setTitulo("Chau")}>Agregar al carrito</button>                 
+//        </div>       
+//           )
+// }
 
-    return (
-        <>
-       <div>
-            <button onClick={aumentarContador}>click</button>
-            <button onClick={resetearContador}>click</button>
-            <button onClick={disminuirContador}>click</button>
-       </div>
-       
-        </>
-        
-     )
+// export default ItemCount;
 
-}
+// // const ItemCount = ({initial, stock, onAdd}) => {
+//     // const[titulo, setTitulo] = useState("cargando")
+//     // const [contador, setContador] = useState(0)
+//     // const [confirmed, setConfirmed] = useState(false)
 
-export default ItemCount;
+//     // useEffect(() => {
+//     //     setTitulo("cargando...")
+
+//     //     setTimeout(() => {
+//     //         setTitulo("Producto")
+//     //     }, 3000)
+//     // }, [confirmed])
+
+//     // const sumar = () => {
+//     //     setContador(contador + 1)
+//     // }
+
+//     // const restar = () => {
+//     //     setContador(contador - 1)
+//     // }
+
+//     // const confirmar = () => {
+//     //     setConfirmed(!confirmed)
+//     // }
+// //     return (
+// //         <>
+// //        <div>
+// //             <h1>{titulo}</h1>
+// //             <p id="parrafo">El contador va : {contador}</p>
+// //             <button onClick={sumar}>Sumar</button>
+// //             <button onClick={confirmar}>Confirmar</button>
+// //             <button onClick={restar}>Restar</button>
+// //        </div>
+// //         </>
+// //         )
+// // }
+
+// // export default ItemCount;

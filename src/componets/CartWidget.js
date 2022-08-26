@@ -1,25 +1,18 @@
-import Container from 'react-bootstrap/Container';
-import Navbar from 'react-bootstrap/Navbar';
+//  import { useContext } from "react"
+ import { NavLink } from "react-router-dom"
+ import { useCarrito } from "./CartContext"
 
-function BrandExample() {
-  return (
-    <>
-      <Navbar bg="dark" variant="dark">
-        <Container>
-          <Navbar.Brand href="#home">
-            <img
-              alt="Logo YR"
-              src="/android-icon-72x72.png"
-              width="56.5"
-              height="56.5"
-              className="fixed-top align-center"
-            />{' '}
-            Seguros YR
-          </Navbar.Brand>
-        </Container>
-      </Navbar>
-    </>
-  );
-}
+ const CartWidget = () => {
 
-export default BrandExample;
+     const { cantidad } = useCarrito()
+
+     return (
+         <NavLink to="/cart">
+             <span className="material-symbols-outlined">
+                 shopping_cart
+             </span>
+             {cantidad}
+         </NavLink>
+     )
+ }
+ export default CartWidget

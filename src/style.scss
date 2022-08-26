@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html , body , #root {
+    height: 100%;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    background-color: rgba(255, 255, 255, 0.868);  
+    color: rgb(5, 4, 4);  
+    font-family: Arial;  
+    text-align: center;  
+}
+
+.header {
+    background-color: rgb(234, 218, 0);
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    align-items: center;
+
+    &__image {
+        width: 24px;
+        height: 24px;
+    }
+
+    a {
+        color: rgb(4, 4, 4);
+        text-decoration: none;
+    }
+
+    nav a {
+        margin-left: 1rem;
+    }
+}
+
+.items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 2rem;
+    margin-top: 1rem;
+}
+
+main {
+    padding: 1rem;
+    flex-grow: 1;
+    text-align: left;
+}
+
+.item {
+    color :#22243b;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    transition: transform 0.2s;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    &__button {
+        background-color: rgb(234, 218, 0);
+        padding: 0.5rem 1rem;
+        text-decoration: none;
+        color: black;
+        border-radius: 3px;
+        margin-top: 10px;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    }
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+
+
+.loader {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+}
+
+.page__header {
+    margin-bottom: 3rem;
+}
+
+ul {
+    list-style: none;
+    
+}
+
+.detail-image {
+    max-width: 300px;
+    height: auto;
+}
