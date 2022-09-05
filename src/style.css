@@ -1,0 +1,135 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#title {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2em;
+    margin: 20px;
+}
+
+#responsive-navbar-nav {
+    font-size: 20px;
+    color: black;
+}
+
+h2 {
+    text-align: center;
+    padding-top: 120px;
+}
+
+.material-symbols-outlined {
+    font-size: xx-large;
+    color: black;
+}
+
+.itemCount {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.itemCount__counter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a{
+    text-decoration: underline;
+}
+
+
+.item {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    border-top: solid rgb(255, 251, 0) 3px;
+}
+
+.itemList {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5vh;
+}
+
+.itemDetail {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10vh;
+}
+
+.button_item {
+    text-decoration: none;
+}
+
+.cartWidget {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cartWidget>a {
+    text-decoration: none;
+    color: black;
+}
+
+.cart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart>h1 {
+    margin-bottom: 120px;
+}
+
+.cartItems {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cartItems__buttons>Button {
+    margin: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.cartItem {
+    display: flex;
+    width: 80%;
+    height: 120px;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.cartItem>div {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+}
+
+.cartItem__title>h3 {
+    width: 90px;
+}
+
+.cartItem__image>img {
+    object-fit: contain;
+    height: 100px;
+    width: 90px;
+}
