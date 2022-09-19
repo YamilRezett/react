@@ -1,26 +1,26 @@
 export const products = [
     {
         id: 1,
-        image:"https://www.moov.com.ar/on/demandware.static/-/Sites-dabra-catalog/default/dw1d77fa19/products/NI_CJ1379-100/NI_CJ1379-100-1.JPG",
-        name: "Air-Force 1",
-        description:"El zapato deportivo Air Force 1, lanzado al mercado en 1990 , es un producto de Nike Inc. Fue creado por el diseñador Riccardo Tisci, fue el primer calzado deportivo de Baloncesto lanzado por Nike Air.",
-        category:"zapatillas",
-        price:20000
+        image:"https://www.vinosyspirits.com/media/catalog/product/cache/f49669d1bf2df0010137a9ec5423343e/b/o/botellaplayagrande_sku_1__300x1000.png",
+        name: "ANTARES PLAYA GRANDE",
+        description:"Un estilo propio a base de trigo con un poco de avena, cascara de naranja, coriandro y jenjibre que la hace mas citrica, compleja y refrescante. Como es tradicional no la filtramos, por lo que se ve turbia. Nuestro homenaje a la plaza emblematica de Mar del Plata, donde el relax, los deportes y la diversion son una forma de vida.",
+        category:"Cerveza.1",
+        price:490
     },
     {
         id: 2,
-        image:"https://www.moov.com.ar/on/demandware.static/-/Sites-dabra-catalog/default/dw68e3b49d/products/NI_CU9101-010/NI_CU9101-010-1.JPG",
-        name: "Camiseta Nike",
-        description:" Las camisetas Nike para hombre tienen un ajuste estándar para una sensación relajada y fácil durante la actividad física. Gran marca Nike impresa en el pecho. Es una camiseta ideal para usar durante la semana.",
-        category:"camisetas",
-        price:1000
+        image:"https://www.vinosyspirits.com/media/catalog/product/cache/f49669d1bf2df0010137a9ec5423343e/b/o/botellahoneybeer_sku_1__300x1000.png",
+        name: "ANTARES HONEY",
+        description:"Babilonia antigua. Tras la boda, el padre de la novia convida al futuro yerno con cerveza de miel a lo largo de un mes. Asi lo dicta la tradicion. Nuestra Honey Beer recoje la historia que dio origen a la Luna de Miel y lo celebra con notas mento-ladas y frutales. Y por supuesto una inversion de miel pura para abrir los corazones.",
+        category:"Cerveza.2",
+        price:550
     },
     {
         id: 3,
-        image:"https://www.dexter.com.ar/on/demandware.static/-/Sites-dabra-catalog/default/dwe5cfde82/products/AD_H57799/AD_H57799-1.JPG",
-        name: "Al Rihla",
-        description:"El Adidas Al Rihla será el balón de fútbol oficial usado durante la Copa Mundial de 2022 en Catar. Será el número 14 confeccionado por la compañía alemana de equipamiento deportivo Adidas.",
-        category:"pelotas",
+        image:"https://www.vinosyspirits.com/media/catalog/product/cache/f49669d1bf2df0010137a9ec5423343e/s/c/scotchsku.png",
+        name: "ANTARES SCOTCH",
+        description:"Dicen que Catalina la Grande, Zarina de Rusia en el siglo XBII, era fanática de las Porter y Stout británicas. Pero, como la travesía desde Inglaterra hasta San petersburgo era muy larga, las cervezas llegaban en mal estado. La original solución fue elaborar cervezas más alcoholicas y fuertes para que soportaran el viaje.",
+        category:"Cerveza.3",
         price:500
     }
 ]

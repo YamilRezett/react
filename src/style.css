@@ -12,12 +12,12 @@
 
 #responsive-navbar-nav {
     font-size: 20px;
-    color: black;
+    color: rgb(254, 254, 254);
 }
 
 h2 {
     text-align: center;
-    padding-top: 120px;
+    padding-top: 40px;
 }
 
 .material-symbols-outlined {
@@ -46,8 +46,8 @@ a{
 .item {
     display: flex;
     flex-direction: row;
-    margin: 20px;
-    border-top: solid rgb(255, 251, 0) 3px;
+    margin: 30px;
+    border-top: solid rgb(2, 2, 2) 3px;
 }
 
 .itemList {
@@ -55,7 +55,7 @@ a{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-top: 5vh;
+    
 }
 
 .itemDetail {
@@ -63,7 +63,8 @@ a{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-top: 10vh;
+    margin-top: 5vh;
+    padding: 5px;
 }
 
 .button_item {
@@ -130,6 +131,7 @@ a {
 
 .cartItem__image>img {
     object-fit: contain;
-    height: 100px;
-    width: 90px;
+    height: 50px;
+    width: 50px;
 }
+

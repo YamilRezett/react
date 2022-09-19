@@ -21,7 +21,7 @@ const ItemDetail = ({listProducts}) => {
                     component="img"
                     height="260"
                     image={listProducts.image}
-                    alt="Air-Force"
+                    alt="Cerveza"
                     title={listProducts.name}
                 />
                 <CardContent>

@@ -11,10 +11,10 @@ import {Link} from 'react-router-dom'
 const Item = ({ product }) => {
     return (
         <div className="item">
-        <Card className='cardShop' sx={{ maxWidth: 345 }} >
+        <Card className='cardShop' sx={{ maxWidth: 350 }} >
             <CardMedia
                 component="img"
-                height="260"
+                // height="400"
                 image={product.image}
                 alt={product.name}
                 title={product.name}
@@ -28,8 +28,8 @@ const Item = ({ product }) => {
                 </Typography>
             </CardContent>
             <CardActions>
-                <Button size="small">Compartir</Button>
-                <Button  as={Link} to={`/detail/${product.id}`} size="small" className='button_item'>Ver más</Button>
+                <Button size="small">Comentarios</Button>
+                <Button  as={Link} to={`/detail/${product.id}`} size="small" className='button_item'>Comprar</Button>
             </CardActions>
         </Card>
         </div>
